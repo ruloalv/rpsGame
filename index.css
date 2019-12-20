@@ -1,0 +1,60 @@
+#tittle {
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: #F0520D;
+}
+#tittle h1{
+	text-align: center;
+}
+
+#container {
+	width: 100%;
+	height: 300px;
+	background-color: gray;
+}
+#play, #score {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+#play {
+	float: left;
+	background-color: #EAC38A;
+}
+#play p {
+	margin: 15px 0px;
+	padding: 0;
+}
+#option, #choose {
+
+}
+#score {
+	float: right;
+	background-color: #9ABAE3;
+}
+table {
+	margin: auto;
+	background-color: #ADC5E4;
+}
+table, td, th{
+	border: 1px solid black;
+}
+button {
+	background-color: transparent;
+	height: 94px;
+	width: 93px;
+	border: none;
+	text-decoration: none;
+}
+#btnRock {
+	background-image: url("imgs/rock.png");
+}
+#btnPaper {
+	background-image: url("imgs/paper.png");
+}
+#btnScissors {
+	background-image: url("imgs/scissors.png");
+}
