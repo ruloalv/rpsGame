@@ -10,7 +10,7 @@
 
 #container {
 	width: 100%;
-	height: 300px;
+	height: 500px;
 	background-color: gray;
 }
 #play, #score {
@@ -28,26 +28,36 @@
 	margin: 15px 0px;
 	padding: 0;
 }
-#option, #choose {
-
+#choose {
+	display: flex;
+}
+#choose img {
+	background-color: white;
+	height: 94px;
+	width: 93px;
+	border: 1px black solid;
 }
 #score {
 	float: right;
 	background-color: #9ABAE3;
 }
 table {
-	margin: auto;
+	margin: 10px auto;
 	background-color: #ADC5E4;
 }
 table, td, th{
 	border: 1px solid black;
 }
-button {
+.jugar {
 	background-color: transparent;
 	height: 94px;
 	width: 93px;
 	border: none;
 	text-decoration: none;
+}
+#userChoose, #computerChoose {
+	flex: 50%;
+	text-align: center;
 }
 #btnRock {
 	background-image: url("imgs/rock.png");
@@ -57,4 +67,9 @@ button {
 }
 #btnScissors {
 	background-image: url("imgs/scissors.png");
+}
+#result {
+	display: block;
+	width: 100%;
+	font-size: 1.5em;
 }

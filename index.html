@@ -13,18 +13,33 @@
 		<div id="play">
 			<p>Choose your play</p>
 			<div id="options">
-				<button id="btnRock"></button>
-				<button id="btnPaper"></button>
-				<button id="btnScissors"></button>
+				<button id="btnRock" class="jugar" name="rock"></button>
+				<button id="btnPaper" class="jugar" name="paper"></button>
+				<button id="btnScissors" class="jugar" name="scissors"></button>
 			</div>
-			<p>Actual Round</p>
+			<p>Actual Round: </p>
 			<div id="choose">
-				<button id="btnUser">USER</button>
-				<button id="btnComputer">COMPUTER</button>
+				<div id="userChoose">
+					<p>USER</p>
+					<img src="imgs/rockpaperscissors.png" id="userImg"></img>	
+				</div>
+				<div id="computerChoose">
+					<p>COMPUTER</p>
+					<img src="imgs/rockpaperscissors.png" id="computerImg"></img>
+				</div>
+			</div>
+			<div id="result">
+				<p id="resultText">¿Quién Ganará?</p>
 			</div>
 		</div>
 		<div id="score">
+			<div>
+				<button id="btnReset">Reset</button>
+			</div>
 			<table id="tblScore">
+				<col width="100">
+				<col width="100">
+				<col width="100">
 				<thead>
 					<tr>
 						<th>Round</th>
@@ -38,8 +53,8 @@
 				<tfoot>
 					<tr>
 						<th id="totalRounds">0</th> 
-						<td id="totalComp">0</td>
 						<td id="totalUser">0</td>
+						<td id="totalComputer">0</td>
 					</tr>
 				</tfoot>
 			</table>
